@@ -41,7 +41,7 @@ const ProductList = ({ products }) => {
                       {description}
                     </span>
                   </div>
-                  {/* <button className="IntrestedBtn">I'm Interested</button> */}
+                 
                   <Link to={`/product/${id}`} className="IntrestedBtn">
                     I'm Interested
                   </Link>
