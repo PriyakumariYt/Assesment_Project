@@ -1,4 +1,4 @@
-/* yaha se */
+
 *{
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ display: grid;
   
   
   
-  .addToCart_btn {
+  .IntrestedBtn {
     float: right;
     margin: 5px 5px 0;
     border: 1px solid #e2cbcb;
@@ -76,7 +76,7 @@ display: grid;
     cursor: pointer;
   }
   
-  .addToCart_btn:hover {
+  .IntrestedBtn:hover {
     background: #aaa;
     color: black;
   }
@@ -228,7 +228,7 @@ display: flex;
 }
 
 .box {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -237,7 +237,7 @@ display: flex;
 .box h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #343a40;
+  color: #f9fbfd;
 }
 
 .boxs {
@@ -247,7 +247,7 @@ display: flex;
 .boxs label {
   display: block;
   margin-bottom: 5px;
-  color: #495057;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -258,10 +258,11 @@ display: flex;
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-.boxs button {
+
+.LoginBtn{
   background-color: #007bff;
   color: white;
   border: none;
@@ -270,9 +271,15 @@ display: flex;
   font-size: 16px;
   cursor: pointer;
 }
+.LoginBtn:hover{
 
-.boxs button:hover {
-  background-color: #0056b3;
+  background-color: #a6c5e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .pagination {

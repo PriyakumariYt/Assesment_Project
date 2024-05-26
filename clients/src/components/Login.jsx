@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import './style.css';
 const Login = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -72,7 +73,7 @@ const Login = () => {
                                 onChange={(e) => setPhone(e.target.value)}
                             />
                         </div>
-                        <button  className="boxs" type="submit">Login</button>
+                        <button className ="LoginBtn" type="submit">Login</button>
                     </form>
                 </div>
             </div>

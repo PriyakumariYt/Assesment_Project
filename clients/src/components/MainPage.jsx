@@ -2,28 +2,19 @@ import React, { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './style.css';
 import ProductList from './ProductList';
-import ShoppingCart from './ShoppingCart';
 import Login from './Login';
-import { FaShoppingCart } from 'react-icons/fa';
 import Data from "./Data";
-
 const MainPage = () => {
   const [products, setProducts] = useState(Data);
-
-  const [searchInput, setSearchInput] = useState('');
-  const [lastSearchTerm, setLastSearchTerm] = useState('');
-
-
-
-
+const [searchInput, setSearchInput] = useState('');
+const [lastSearchTerm, setLastSearchTerm] = useState('');
 const handleSearch = () => {
   // If searchInput is empty, show all products
   if (searchInput.trim() === '') {
     setProducts(Data);
   } else {
 
-    const filteredProducts = Data.filter(product =>
-     
+const filteredProducts = Data.filter(product =>
       product.category.toLowerCase().includes(searchInput.toLowerCase())
     );
 
@@ -32,9 +23,6 @@ const handleSearch = () => {
     setLastSearchTerm(searchInput);
   }
 };
-
-
-
 
 return (
 
@@ -53,11 +41,8 @@ return (
       </li>
      
     </ul>
-        {/* Add search input and button */}
-        <div className='search-container'>
-
-      
-        <input type="text"
+       <div className='search-container'>
+       <input type="text"
           placeholder="Search..."
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
