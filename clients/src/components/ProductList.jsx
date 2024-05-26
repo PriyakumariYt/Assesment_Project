@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-
+import {Link } from 'react-router-dom';
 const ProductList = ({ products }) => {
  
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,7 +41,10 @@ const ProductList = ({ products }) => {
                       {description}
                     </span>
                   </div>
-                  <button className="IntrestedBtn">I'm Interested</button>
+                  {/* <button className="IntrestedBtn">I'm Interested</button> */}
+                  <Link to={`/product/${id}`} className="IntrestedBtn">
+                    I'm Interested
+                  </Link>
                 </div>
               </div>
             );
