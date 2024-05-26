@@ -79,6 +79,7 @@ display: grid;
   .IntrestedBtn:hover {
     background: #aaa;
     color: black;
+    
   }
   
   .card-media {
@@ -104,7 +105,7 @@ display: grid;
       justify-content: space-around;
     }
   }
-  /* navbar */
+ 
   /* Navbar styles */
 .navbar {
   background-image: linear-gradient(to right top, #04394c, #003248, #002a44, #00233f, #001b39, #001d3b, #00203d, #00223f, #002e48, #003b4c, #00464d, #09514b);
@@ -145,12 +146,8 @@ display: grid;
  
   }
   
-  /* Style for the shopping cart icon */
-  .FaShoppingCart {
-    margin-right: 5px; /* Adjust spacing between icon and text */
-  }
   
-  /* Optional: Hover effect for navbar items */
+  
   nav a:hover {
     color: #ffd700; /* Change the hover color as needed */
   }
@@ -202,23 +199,7 @@ display: grid;
   outline: none;
   border-color: #4caf50; 
 }
-.payment{
-margin-top: 25px;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.payment-button{
-  padding: 10px 7px ;
-  border: none;
-  background: #c6d1d3;
-  font-size: 15px;
-  cursor: pointer;
-}
-.payment-button:hover{
-  background: #45a049;
-  color: #dfdfdf;
-}
+
 /* lOGIN cONTAINER */
 .container {
   display: flex;
