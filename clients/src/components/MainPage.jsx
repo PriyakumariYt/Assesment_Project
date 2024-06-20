@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './style.css';
+import './styles.css';
 import ProductList from './ProductList';
 import Login from './Login';
 import Data from "./Data";
